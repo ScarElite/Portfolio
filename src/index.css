@@ -1,7 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Konkhmer Sleokchher";
+  --secondary-font: "Righteous";
+  --tertiary-font: "Braah One";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Righteous', 'Konkhmer Sleokchher', 'Braah One',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +24,91 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  height: 125px;
+  max-height: 125px;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 0 5%;
+  z-index: 5;
+}
+
+.nav-logo {
+  width: 25%;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav img {
+  height: 125px;
+  width: 125px;
+}
+
+nav li:hover {
+  color: rgb(1, 169, 46);
+}
+
+#Main {
+  width: 100%;
+  height: 91vh;
+  margin-top: 125px;
+  background-image: url("./assets/images/bg-sci-fi.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: var(--primary-font), sans-serif;
+}
+
+.main-div {
+  justify-content: center;
+  margin-bottom: 10%;
+  width: 90%;
+}
+
+.main-header {
+  font-size: 160px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px lightgrey;
+}
+
+.main-description {
+  font-size: 32px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px lightgrey;
+}
+
+#About {
+  margin: 200px 50px 50px;
+}
+
+.left-side {
+  width: 60%;
+}
+
+.about-header {
+  font-size: 5rem;
+  font-family: var(--primary-font);
+}
+
+.about-description {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  line-height: 2 ;
+}
+
+.right-side {
+  width: 40%;
 }
