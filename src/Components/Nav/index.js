@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import logo from '../../assets/images/MA-logo.svg';
 
 function Nav() {
@@ -12,16 +12,22 @@ function Nav() {
       </div>
       <ul className="flex items-center">
         <li className="px-10">
-          <Link>Home</Link>
+          <Link to="Main" smooth={true} duration={2000}>
+            Home
+          </Link>
         </li>
         <li className="px-5">
-          <Link>Projects</Link>
+          <Link to="About" smooth={true} duration={2000}>
+            About
+          </Link>
+        </li>
+        <li className="px-5">
+          <Link to="Projects" smooth={true} duration={2000}>
+            Projects
+          </Link>
         </li>
         <li className="px-5">
           <Link>Contact</Link>
-        </li>
-        <li className="px-5">
-          <Link>Other</Link>
         </li>
       </ul>
     </nav>

@@ -57,6 +57,7 @@ nav img {
 
 nav li:hover {
   color: rgb(1, 169, 46);
+  cursor: pointer;
 }
 
 #Main {
@@ -111,4 +112,51 @@ nav li:hover {
 
 .right-side {
   width: 40%;
+}
+
+#Projects {
+  margin: 200px 50px 50px;
+}
+
+.project {
+  height: 414px;
+}
+
+.projects-header {
+  font-family: var(--secondary-font);
+  font-size: 5rem;
+}
+
+.project-preview {
+  width: fit-content;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background-color: black;
+  padding: 4px;
+}
+
+.project-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.project-overview {
+  /* border: 2px solid red; */
+  width: 550px;
+  padding: 0px 20px 20px 40px;
+  margin-left: 20px;
+  font-family: var(--tertiary-font);
+}
+
+.project-title {
+  color: blue;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: var(--primary-font);
+}
+
+.project-description {
+  font-family: var(--tertiary-font);
+  font-size: 16px;
 }
