@@ -198,12 +198,20 @@ nav li:hover {
   color: black;
 }
 
-.user-icon {
+.user-icon, .link-icon, .updated {
   font-size: 24px;
 }
 
-.project-team-section, .project-links-section {
-  width: 50%;
+.project-team-section {
+  width: 35%;
+}
+
+.project-links-section {
+  width: 25%;
+}
+
+.project-updated-section {
+  width: 40%;
 }
 
 .project-tech {
@@ -233,6 +241,73 @@ nav li:hover {
   color: black;
 }
 
-.link-icon {
-  font-size: 24px;
+.project-updated-header {
+    font-family: var(--secondary-font);
+  font-size: 18px;
+  border: 1px solid lightpink;
+  border-radius: 15px;
+  background-color: lightpink;
+  padding: 2px 8px;
+  width: fit-content;
+  color: black;
+}
+
+#OtherProjects {
+  margin: 200px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-projects-header {
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+}
+
+.other-projects {
+  width: 100%;
+}
+
+.other-project {
+  margin: 20px;
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.other-project-header {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  background-color: lightblue;
+  border-radius: 15px 15px 0 0;
+}
+
+.other-project-description {
+  font-family: var(--tertiary-font);
+  padding: 6px 6px 0px;
+}
+
+.other-project-updated-header {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  border: 1px solid lightcoral;
+  border-radius: 15px;
+  background-color: lightcoral;
+  padding: 2px 8px;
+  width: fit-content;
+  color: black;
+}
+
+.other-updated {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 2px 8px;
+}
+
+.other-project-tech-list {
+  height: 40px;
+  width: 40px;
 }

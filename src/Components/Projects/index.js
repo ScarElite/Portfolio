@@ -2,6 +2,7 @@ import React from 'react';
 import NobleOak from '../../assets/images/Noble-Oak-Solutions-Preview.JPG';
 import OurPlace from '../../assets/images/OurPlace-preview.JPG';
 import AlternativeEndings from '../../assets/images/Alternative-Endings-Preview.JPG';
+import MealMaker from '../../assets/images/MealMaker.PNG';
 import HTML from '../../assets/other/html5.svg';
 import CSS from '../../assets/other/css3.svg';
 import JavaScript from '../../assets/other/javascript.svg';
@@ -53,7 +54,7 @@ function Projects() {
               </p>
             </div>
             <div>
-              <div className="flex">
+              <div className="flex justify-evenly">
                 <div className="mb-4 flex flex-col project-team-section">
                   <h1 className="project-team mb-2">Team Size:</h1>
                   <ul className="flex">
@@ -84,6 +85,10 @@ function Projects() {
                       </a>
                     </li>
                   </ul>
+                </div>
+                <div className="mb-4 flex flex-col project-updated-section">
+                  <h1 className="mb-2 project-updated-header">Last Updated:</h1>
+                  <h2 className="updated">April 26, 2023</h2>
                 </div>
               </div>
               <div className="project-tech-section flex flex-col">
@@ -205,6 +210,10 @@ function Projects() {
                       </a>
                     </li>
                   </ul>
+                </div>
+                <div className="mb-4 flex flex-col project-updated-section">
+                  <h1 className="mb-2 project-updated-header">Last Updated:</h1>
+                  <h2 className="updated">March 27, 2023</h2>
                 </div>
               </div>
               <div className="project-tech-section flex flex-col">
@@ -350,6 +359,10 @@ function Projects() {
                     </li>
                   </ul>
                 </div>
+                <div className="mb-4 flex flex-col project-updated-section">
+                  <h1 className="mb-2 project-updated-header">Last Updated:</h1>
+                  <h2 className="updated">Nov. 14, 2022</h2>
+                </div>
               </div>
               <div className="project-tech-section flex flex-col">
                 <h2 className="project-tech mb-2">Technologies Used:</h2>
@@ -393,6 +406,118 @@ function Projects() {
                 </ul>
               </div>
             </div>
+          </div>
+        </li>
+
+        <li className="project flex justify-center mb-40">
+          <div className="project-overview-reverse flex flex-col justify-between">
+            <div className="mb-4">
+              <div className="flex justify-between items-center project-top-info">
+                <header className="project-title mb-2">Meal Maker</header>
+                <span className="project-tag">Featured</span>
+              </div>
+              <p className="project-description">
+                This was the 1st project in the UNC Chapel Hill Coding BootCamp
+                and was a collaborative project. I worked on this project with{' '}
+                <span className="dev-name">
+                  <a href="https://github.com/DavidDowell" target="blank">
+                    David Dowell,
+                  </a>
+                </span>{' '}
+                <span className="dev-name">
+                  <a href="https://github.com/pmacdonald07" target="blank">
+                    Patrick MacDonald,
+                  </a>
+                </span>{' '}
+                and
+                <span className="dev-name">
+                  <a href="https://github.com/awchen85" target="blank">
+                    Alex Chen
+                  </a>
+                </span>
+                . We all did our fair share of work, had a ton of communication,
+                and I loved working with these guys. I worked on both the front
+                end and the backend and dealt with most of the API calls and
+                data. Overall this was a great experience and I learned a lot
+                about working with other developers.
+              </p>
+            </div>
+            <div>
+              <div className="flex">
+                <div className="mb-4 flex flex-col project-team-section">
+                  <h1 className="project-team mb-2">Team Size:</h1>
+                  <ul className="flex">
+                    <i
+                      class="fa-solid fa-user mx-1 user-icon"
+                      title="Mitchell Armstrong"
+                    ></i>
+                    <i
+                      class="fa-solid fa-user mx-1 user-icon"
+                      title="David Dowell"
+                    ></i>
+                    <i
+                      class="fa-solid fa-user mx-1 user-icon"
+                      title="Patrick MacDonald"
+                    ></i>
+                    <i
+                      class="fa-solid fa-user mx-1 user-icon"
+                      title="Alex Chen"
+                    ></i>
+                  </ul>
+                </div>
+                <div className="mb-4 flex flex-col project-links-section">
+                  <h1 className="project-links mb-2">Links:</h1>
+                  <ul className="flex">
+                    <li className="mx-2 link-icon" title="GitHub Repo">
+                      <a
+                        href="https://github.com/ScarElite/Meal-Maker"
+                        target="blank"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </li>
+                    <li className="mx-2 link-icon" title="Website">
+                      <a
+                        href="https://pmacdonald07.github.io/Meal-Maker/"
+                        target="blank"
+                      >
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mb-4 flex flex-col project-updated-section">
+                  <h1 className="mb-2 project-updated-header">Last Updated:</h1>
+                  <h2 className="updated">Sep. 14, 2022</h2>
+                </div>
+              </div>
+              <div className="project-tech-section flex flex-col">
+                <h2 className="project-tech mb-2">Technologies Used:</h2>
+                <ul className="project-tech-list flex">
+                  <li className="mx-1">
+                    <img src={HTML} alt="HTML Icon" title="HTML" />
+                  </li>
+                  <li className="mx-1">
+                    <img src={CSS} alt="CSS Icon" title="CSS" />
+                  </li>
+                  <li className="mx-1">
+                    <img
+                      src={JavaScript}
+                      alt="JavaScript Icon"
+                      title="JavaScript"
+                    />
+                  </li>
+                  <li className="mx-1">
+                    <img src={jQuery} alt="jQuery Icon" title="jQuery" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project-preview">
+            <a href="https://pmacdonald07.github.io/Meal-Maker/" target="blank">
+              <img src={MealMaker} alt="project" className="project-img" />
+            </a>
           </div>
         </li>
       </ul>
