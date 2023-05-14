@@ -4,7 +4,7 @@ import CSS from '../../assets/other/css3.svg';
 
 function OtherProjects() {
   return (
-    <section id="OtherProjects" className="pt-16">
+    <section id="OtherProjects" className="other-projects-section pt-16">
       <header className="text-center other-projects-header">
         OTHER PROJECTS
       </header>

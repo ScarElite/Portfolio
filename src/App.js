@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Nav from './Components/Nav';
 import Main from './Components/Main';
+import Nav from './Components/Nav';
 import About from './Components/About';
 import Projects from './Components/Projects';
 import OtherProjects from './Components/OtherProjects';
@@ -11,8 +11,8 @@ function App() {
   return (
     <main>
       <Router>
-        <Nav />
         <Main />
+        <Nav />
         <About />
         <Projects />
         <OtherProjects />

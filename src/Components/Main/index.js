@@ -8,11 +8,8 @@ function Main() {
         <source src={Video} type="video/mp4" />
       </video>
       <div className="flex flex-col main-div">
-        <header className="main-header">Hello, I'm Mitchell!</header>
-        <p className="main-description">
-          Full Stack Web Developer and graduate from UNC Chapel Hill Coding Boot
-          Camp
-        </p>
+        <h1 className="main-header">Hello, I'm Mitchell!</h1>
+        <h2 className="main-description">I'm a Full Stack Web Developer</h2>
       </div>
     </section>
   );

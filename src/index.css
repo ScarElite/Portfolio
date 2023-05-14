@@ -7,6 +7,8 @@
 }
 
 :root {
+  --primary-color: rgb(20,20,22);
+  --secondary-color: lime;
   --primary-font: "Konkhmer Sleokchher";
   --secondary-font: "Righteous";
   --tertiary-font: "Braah One";
@@ -19,6 +21,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 code {
@@ -26,45 +30,13 @@ code {
     monospace;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: var(--primary-font);
-  height: 125px;
-  max-height: 125px;
-  width: 100%;
-  /* border-bottom: 1px solid black; */
-  background-color: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  padding: 0 5%;
-  z-index: 5;
-}
-
-.nav-logo {
-  width: 25%;
-}
-
-.logo {
-  width: 100%;
-}
-
-nav img {
-  height: 125px;
-  width: 125px;
-}
-
-nav li:hover {
-  color: rgb(1, 169, 46);
-  cursor: pointer;
-}
-
 #Main {
   position: relative;
   width: 100%;
-  height: 91vh;
-  margin-top: 125px;
+  height: 100vh;
+  /* If I want to have the navbar up at the top uncomment below */
+  /* height: 91vh; */
+  /* margin-top: 125px; */
   font-family: var(--primary-font), sans-serif;
 }
 
@@ -101,8 +73,46 @@ nav li:hover {
   text-shadow: 0 0 10px lightgrey;
 }
 
+nav {
+  /* If I want to have the navbar up at the top uncomment below */
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  height: 125px;
+  max-height: 125px;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+  /* background-color: white; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 0 5%;
+  z-index: 10;
+  color: black;
+}
+
+.nav-logo {
+  width: 25%;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav img {
+  height: 125px;
+  width: 125px;
+}
+
+nav li:hover {
+  color: rgb(1, 169, 46);
+  cursor: pointer;
+}
+
 #About {
   margin: 200px 50px 50px;
+  height: 100vh;
 }
 
 .left-side {
@@ -126,10 +136,11 @@ nav li:hover {
 
 #Projects {
   margin: 200px 50px 50px;
+  height: 100%;
 }
 
-.project {
-  height: 450px;
+.project-slider {
+  height: 100%;
 }
 
 .projects-header {
@@ -137,129 +148,96 @@ nav li:hover {
   font-size: 5rem;
 }
 
-.project-preview {
-  width: fit-content;
-}
-
-.project-img {
-  width: 480px;
-  height: 480px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  background-color: black;
-  padding: 4px;
+.project {
+  display: flex !important;
+  height: 700px;
 }
 
 .project-overview {
-  width: 550px;
+  width: 50%;
   padding: 0px 20px 20px 40px;
-  margin-left: 20px;
+  margin-left: 150px;
   font-family: var(--tertiary-font);
 }
 
-.project-overview-reverse {
-  width: 550px;
-  padding: 0px 40px 20px 20px;
-  margin-right: 20px;
+.project-type {
+  color: #F0F8FF;
   font-family: var(--tertiary-font);
-}
-
-.project-top-info {
-  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .project-title {
-  color: blue;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 60px;
   font-family: var(--primary-font);
-}
-
-.project-tag {
-  border: 1px solid gold;
-  border-radius: 15px;
-  background-color: gold;
-  padding: 4px 10px;
-  font-size: 20px;
-  font-family: var(--primary-font);
+  color: var(--secondary-color);
 }
 
 .project-description {
-  font-family: var(--tertiary-font);
-  font-size: 16px;
-}
-
-.dev-name {
-  color: red;
-}
-
-.dev-name:hover {
-  color: lightcoral;
+  width: 75%;
+  font-family: var(--primary-font);
+  font-size: 18px;
 }
 
 .project-team {
+  font-size: 20px;
+}
+
+.project-team-member {
   font-family: var(--secondary-font);
   font-size: 18px;
-  border: 1px solid lightgreen;
+  border: 1px solid var(--secondary-color);
   border-radius: 15px;
-  background-color: lightgreen;
+  background-color: var(--secondary-color);
   padding: 2px 8px;
   width: fit-content;
   color: black;
 }
 
-.user-icon, .link-icon, .updated {
-  font-size: 24px;
+.project-team-member:hover {
+  border-color: lightgreen;
+  background-color: lightgreen;
 }
 
-.project-team-section {
-  width: 35%;
-}
-
-.project-links-section {
-  width: 25%;
-}
-
-.project-updated-section {
-  width: 40%;
+.project-tech-section {
+  width: 75%;
+  flex-wrap: wrap;
 }
 
 .project-tech {
   font-family: var(--secondary-font);
   font-size: 18px;
-  border: 1px solid lightcoral;
-  border-radius: 15px;
-  background-color: lightcoral;
-  padding: 2px 8px;
-  width: fit-content;
-  color: black;
 }
 
-.project-tech-list li img {
+.project-tech-item {
   width: 50px;
   height: 50px;
 }
 
-.project-links {
-  font-family: var(--secondary-font);
-  font-size: 18px;
-  border: 1px solid cyan;
-  border-radius: 15px;
-  background-color: cyan;
-  padding: 2px 8px;
-  width: fit-content;
-  color: black;
+.project-preview {
+  width: 50%;
 }
 
-.project-updated-header {
-    font-family: var(--secondary-font);
-  font-size: 18px;
-  border: 1px solid lightpink;
-  border-radius: 15px;
-  background-color: lightpink;
-  padding: 2px 8px;
+.project-img {
+  width: 700px;
+  height: 700px;
+}
+
+.project-links {
+  font-family: var(--tertiary-font);
+  font-size: 24px;
   width: fit-content;
-  color: black;
+  color: lime;
+}
+
+.link-icon {
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+.link-icon:hover {
+  color: lime;
+  translate: 0 -5px;
 }
 
 #OtherProjects {
@@ -267,11 +245,13 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .other-projects-header {
   font-family: var(--secondary-font);
   font-size: 4rem;
+  margin-top: 125px;
 }
 
 .other-projects {

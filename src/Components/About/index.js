@@ -3,7 +3,7 @@ import logo from '../../assets/images/MA-logo.svg';
 
 function About() {
   return (
-    <section id="About" className="flex items-center">
+    <section id="About" className="about-section flex items-center">
       <article className="left-side flex flex-col">
         <div>
           <header className="about-header text-center">About Me</header>
