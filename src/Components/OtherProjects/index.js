@@ -1,6 +1,4 @@
 import React from 'react';
-import HTML from '../../assets/other/html5.svg';
-import CSS from '../../assets/other/css3.svg';
 
 function OtherProjects() {
   return (
@@ -9,42 +7,47 @@ function OtherProjects() {
         OTHER PROJECTS
       </header>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
-        <li className="other-project flex flex-col">
-          <header className="other-project-header text-center">
-            Run Buddy
-          </header>
-          <div className="mb-6">
+        <a href="https://hidden-bastion-66681.herokuapp.com/" target="blank">
+          <li className="other-project flex flex-col">
+            <div className="flex justify-between mb-4">
+              <h1 className="other-project-type pt-1">SOLO</h1>
+              <ul className="flex">
+                <div className="mx-2 other-link-icon" title="GitHub Repo">
+                  <a
+                    href="https://github.com/ScarElite/Text-Editor-PWA"
+                    target="blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <div className="mx-2 other-link-icon" title="Website">
+                  <a
+                    href="https://hidden-bastion-66681.herokuapp.com/"
+                    target="blank"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </div>
+              </ul>
+            </div>
+            <h1 className="other-project-title mb-4">
+              J.A.T.E - Just Another Text Editor
+            </h1>
             <p className="other-project-description">
-              Run Buddy is a website that offers fitness training services. This
-              was the first website I ever created and is created using purely
-              HTML and CSS.
+              JATE is a Progressive Web Application (PWA) that gives users a
+              text editor in the browser. It persists data that you input and
+              you can also click the install button to have it on your computer
+              to have access to it anytime you want.
             </p>
-          </div>
-          <ul className="flex mx-2">
-            <li className="other-project-tech-list">
-              <img src={HTML} alt="HTML icon" />
-            </li>
-            <li className="other-project-tech-list">
-              <img src={CSS} alt="HTML icon" />
-            </li>
-          </ul>
-          <ul className="flex justify-center mb-4">
-            <li className="mx-4 link-icon" title="GitHub Repo">
-              <a href="https://github.com/ScarElite/run-buddy" target="blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-            <li className="mx-4 link-icon" title="Website">
-              <a href="https://scarelite.github.io/run-buddy/" target="blank">
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </li>
-          </ul>
-          <div className="flex mx-2">
-            <h1 className="other-project-updated-header">Last Updated:</h1>
-            <h2 className="other-updated">July 21, 2022</h2>
-          </div>
-        </li>
+            <ul className="other-project-tech-list flex pt-8">
+              <li className="other-project-tech mr-2">HTML</li>
+              <li className="other-project-tech mx-2">CSS</li>
+              <li className="other-project-tech mx-2">JavaScript</li>
+              <li className="other-project-tech mx-2">ExpressJS</li>
+              <li className="other-project-tech mx-2">Heroku</li>
+            </ul>
+          </li>
+        </a>
         <li className="other-project"></li>
         <li className="other-project"></li>
         <li className="other-project"></li>

@@ -7,7 +7,8 @@
 }
 
 :root {
-  --primary-color: rgb(20,20,22);
+  /* --primary-color: rgb(20,20,22); */
+  --primary-color: #141414;
   --secondary-color: lime;
   --primary-font: "Konkhmer Sleokchher";
   --secondary-font: "Righteous";
@@ -21,7 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-color);
+  background-color: #141414;
   color: white;
 }
 
@@ -260,23 +261,53 @@ nav li:hover {
 
 .other-project {
   margin: 20px;
-  background-color: white;
-  width: 300px;
+  padding: 10px 30px;
+  border: 2px solid #333;
+  /* background-color: #333; */
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  width: 400px;
   height: 100%;
-  border: 2px solid black;
   border-radius: 12px;
 }
 
-.other-project-header {
+.other-project:hover {
+  translate: 0 -10px;
+}
+
+.other-project-type {
+  font-family: var(--tertiary-font);
+  font-size: 22px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  width: 25%;
+}
+
+.other-link-icon {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.other-link-icon:hover {
+  color: lime;
+  translate: 0 -5px;
+}
+
+.other-project-title {
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  background-color: lightblue;
-  border-radius: 15px 15px 0 0;
+  font-size: 22px;
+  color: #F0F8FF;
 }
 
 .other-project-description {
   font-family: var(--tertiary-font);
-  padding: 6px 6px 0px;
+  font-size: 16px;
+  color: lightgreen;
+}
+
+.other-project-tech-list {
+  color: #999;
+  font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 .other-project-updated-header {
