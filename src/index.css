@@ -10,6 +10,7 @@
   /* --primary-color: rgb(20,20,22); */
   --primary-color: #141414;
   --secondary-color: lime;
+  --tertiary-color: lightgreen;
   --primary-font: "Konkhmer Sleokchher";
   --secondary-font: "Righteous";
   --tertiary-font: "Braah One";
@@ -34,7 +35,7 @@ code {
 #Main {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   /* If I want to have the navbar up at the top uncomment below */
   /* height: 91vh; */
   /* margin-top: 125px; */
@@ -75,40 +76,85 @@ code {
 }
 
 nav {
-  /* If I want to have the navbar up at the top uncomment below */
-  /* position: fixed; */
-  position: sticky;
-  top: 0;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: var(--primary-font);
-  height: 125px;
-  max-height: 125px;
-  width: 100%;
-  /* border-bottom: 1px solid black; */
-  /* background-color: white; */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  padding: 0 5%;
-  z-index: 10;
-  color: black;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  width: fit-content;
+  z-index: 100;
+  color: white;
 }
 
-.nav-logo {
-  width: 25%;
+.nav-links {
+  align-items: start;
 }
 
-.logo {
-  width: 100%;
-}
-
-nav img {
-  height: 125px;
-  width: 125px;
-}
-
-nav li:hover {
-  color: rgb(1, 169, 46);
+.nav-link {
   cursor: pointer;
+  padding: 6px 0;
+  width: 100%;
+  height: 60px;
+  border-right: 1px solid transparent;
+  transition: color 2s, opacity 2s;
+  opacity: 0.5;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+  /* border-right-color: white; */
+}
+
+.nav-active {
+  color: var(--secondary-color);
+  border-right: 4px solid var(--secondary-color);
+  z-index: 101;
+  color: var(--secondary-color);
+  opacity: 1;
+}
+
+.nav-link.animate-border {
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes borderAnimationFromTop {
+  0% {
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+  100% {
+    height: 100%;
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes borderAnimationFromBottom {
+  0% {
+    height: 0;
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+  100% {
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+}
+
+.scrollbar-line {
+  position: absolute;
+  right: 1px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.scrollbar-line.animate-scrollbar {
+  transform-origin: top;
+  transform: scaleY(0);
 }
 
 .t-top {
@@ -132,7 +178,7 @@ nav li:hover {
 
 #About {
   margin: 200px 50px 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .left-side {
@@ -156,7 +202,7 @@ nav li:hover {
 
 #Projects {
   margin: 200px 50px 50px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .project-slider {
@@ -265,7 +311,7 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .other-projects-header {
@@ -311,7 +357,7 @@ nav li:hover {
 }
 
 .other-link-icon:hover {
-  color: lime;
+  color: var(--secondary-color);
   translate: 0 -5px;
 }
 
@@ -325,7 +371,7 @@ nav li:hover {
 .other-project-description {
   font-family: var(--tertiary-font);
   font-size: 16px;
-  color: lightgreen;
+  color: var(--tertiary-color);
   height: 50%;
 }
 
@@ -341,5 +387,81 @@ nav li:hover {
 
 #Contact {
   margin: 200px 50px 50px;
-  height: 100vh;
+  min-height: 75vh;
+}
+
+.contact-header {
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+  margin: 125px 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-h1 {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+.contact-form {
+  width: 500px;
+}
+
+.contact-form input {
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 6px;
+  background-color: #333;
+  color: var(--secondary-color);
+}
+
+.contact-form input:hover {
+  border: 1px solid var(--tertiary-color);
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-color: var(--tertiary-color);
+}
+
+.contact-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset; /* Prevent background color change on autofill */
+  -webkit-text-fill-color: var(--secondary-color); /* Set the text color on autofill */
+}
+
+.contact-form textarea {
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 6px;
+  background-color: #333;
+  color: var(--secondary-color);
+  height: 126px;
+}
+
+.contact-form textarea:hover {
+  border: 1px solid var(--tertiary-color);
+}
+
+.contact-submit {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  transition: 0.5s ease-out all;
+  width: 30%;
+  border: 1px solid var(--tertiary-color);
+}
+
+.contact-submit:hover {
+  color: black;
+  background-color: var(--tertiary-color);
+}
+
+.contact-submit:active {
+  color: var(--tertiary-color);
+  background-color: green;
 }
