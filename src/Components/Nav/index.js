@@ -36,7 +36,7 @@ function Nav() {
     scroll.scrollTo(to, {
       smooth: true,
       duration: 2000,
-      offset: -window.innerHeight / 2,
+      offset: 0,
     });
   };
 
@@ -54,7 +54,7 @@ function Nav() {
             duration={2000}
             className="mr-4"
             spy={true}
-            offset={-window.innerHeight / 2}
+            offset={0}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('Main')}
           >
@@ -72,7 +72,7 @@ function Nav() {
             duration={2000}
             className="mr-4"
             spy={true}
-            offset={-window.innerHeight / 2}
+            offset={0}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('About')}
           >
@@ -90,7 +90,7 @@ function Nav() {
             duration={2000}
             className="mr-4"
             spy={true}
-            offset={-window.innerHeight / 2}
+            offset={0}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('Projects')}
           >
@@ -108,7 +108,7 @@ function Nav() {
             duration={2000}
             className="mr-4"
             spy={true}
-            offset={-window.innerHeight / 2}
+            offset={0}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('OtherProjects')}
           >
@@ -126,7 +126,7 @@ function Nav() {
             duration={2000}
             className="mr-4"
             spy={true}
-            offset={-window.innerHeight / 2}
+            offset={0}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('Contact')}
           >
