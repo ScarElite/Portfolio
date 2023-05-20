@@ -3,17 +3,30 @@ import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 function Nav() {
   const [activeLink, setActiveLink] = useState('');
+  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
   useEffect(() => {
     Events.scrollEvent.register('begin', () => {});
     Events.scrollEvent.register('end', () => {});
     scrollSpy.update();
 
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
       Events.scrollEvent.remove('begin');
       Events.scrollEvent.remove('end');
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    const mainComponentHeight = document.getElementById('Main').offsetHeight;
+    const isBelowMainComponent = scrollPosition > mainComponentHeight;
+
+    setIsNavbarVisible(isBelowMainComponent);
+  };
 
   const handleSetActive = (to, from) => {
     setActiveLink(to);
@@ -41,9 +54,12 @@ function Nav() {
   };
 
   return (
-    <nav id="Nav" className="flex justify-end">
+    <nav
+      id="Nav"
+      className={`flex justify-end ${isNavbarVisible ? 'visible' : 'hidden'}`}
+    >
       <ul className="flex flex-col items-end nav-links">
-        <li
+        {/* <li
           className={`nav-link flex items-center justify-between ${
             activeLink === 'Main' ? 'nav-active' : ''
           }`}
@@ -60,7 +76,7 @@ function Nav() {
           >
             00
           </Link>
-        </li>
+        </li> */}
         <li
           className={`nav-link flex items-center justify-between ${
             activeLink === 'About' ? 'nav-active' : ''
