@@ -4,6 +4,26 @@ import communication from '../../assets/other/communication.svg';
 import responsive from '../../assets/other/responsive.svg';
 import problemSolver from '../../assets/other/problemSolver.svg';
 import timeManagement from '../../assets/other/timeManagement.svg';
+import HTML from '../../assets/icons/html5.svg';
+import CSS from '../../assets/icons/css.svg';
+import TailwindCSS from '../../assets/icons/tailwind-css.svg';
+import Bootstrap from '../../assets/icons/bootstrap.svg';
+import JavaScript from '../../assets/icons/javascript.svg';
+import jQuery from '../../assets/icons/jquery.svg';
+import ReactJS from '../../assets/icons/react.svg';
+import NodeJS from '../../assets/icons/node-js.svg';
+import ExpressJS from '../../assets/icons/express.svg';
+import MongoDB from '../../assets/icons/mongodb.svg';
+import GraphQL from '../../assets/icons/graphql.svg';
+import MySQL from '../../assets/icons/mysql.svg';
+import NoSQL from '../../assets/icons/nosql.svg';
+import HandlebarsJS from '../../assets/icons/handlebars.svg';
+import Git from '../../assets/icons/git.svg';
+import VSCode from '../../assets/icons/visual-studio-code.svg';
+import Heroku from '../../assets/icons/heroku.svg';
+import Canva from '../../assets/icons/canva.svg';
+import pfp from '../../assets/images/pfp.jpg';
+import { Link } from 'react-scroll';
 
 function About() {
   return (
@@ -43,33 +63,99 @@ function About() {
         </div>
       </div>
       <div className="flex justify-center items-center about-info">
-        <article className="left-side flex flex-col">
-          <div className="flex justify-center">
-            <p className="about-description">
-              I'm a graduate of the UNC Chapel Hill Coding BootCamp that teaches
-              students how to become a Fullstack Web Developer. The beginning of
-              my coding journey was an accident. It was a time in my life where
-              nothing was going on for me and I was mindlessly scrolling through
-              social media. I came across the same ad for a coding course,
-              FrontEnd Simplified, many many times. I finally decided to give it
-              a try and after a couple of days of coding I was hooked. People in
-              my life always told me they could see me becoming a web developer
-              but I always thought it wouldn't be something I was interested in
-              and I was of course WRONG. I started to look for another way that
-              I could continue my journey and that's where I found the Coding
-              BootCamp offered by UNC Chapel Hill and I continued my journey in
-              July of 2022. This program is 6 months long and I graduated in
-              January of 2023. During the program I learned so much and I'm
-              eager to continue learning and become a better Fullstack Web
-              Developer. I absolutely love coding and I'm excited for all of the
-              things I will create! I've worked with some great web developers
-              during my time in the BootCamp and I'm eager to work with other
-              developers outside of that ! Let's make something awesome!
-            </p>
+        <article className="left-side flex flex-col px-20">
+          <div className="flex flex-col justify-center">
+            <header className="skills-header text-center">Skills</header>
+            <div className="skills flex flex-wrap">
+              <div className="skill flex flex-col items-center m-2">
+                <img src={HTML} alt="skill" className="skill-icon" />
+                <p className="text-center">HTML</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={CSS} alt="skill" className="skill-icon" />
+                <p className="text-center">CSS</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={TailwindCSS} alt="skill" className="skill-icon" />
+                <p className="text-center">TailwindCSS</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={Bootstrap} alt="skill" className="skill-icon" />
+                <p className="text-center">Bootstrap</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={JavaScript} alt="skill" className="skill-icon" />
+                <p className="text-center">JavaScript</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={jQuery} alt="skill" className="skill-icon" />
+                <p className="text-center">jQuery</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={ReactJS} alt="skill" className="skill-icon" />
+                <p className="text-center">React</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={NodeJS} alt="skill" className="skill-icon" />
+                <p className="text-center">NodeJS</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={ExpressJS} alt="skill" className="skill-icon" />
+                <p className="text-center">ExpressJS</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={MongoDB} alt="skill" className="skill-icon" />
+                <p className="text-center">MongoDB</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={GraphQL} alt="skill" className="skill-icon" />
+                <p className="text-center">GraphQL</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={MySQL} alt="skill" className="skill-icon" />
+                <p className="text-center">MySQL</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={NoSQL} alt="skill" className="skill-icon" />
+                <p className="text-center">NoSQL</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={HandlebarsJS} alt="skill" className="skill-icon" />
+                <p className="text-center">HandlebarsJS</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={Git} alt="skill" className="skill-icon" />
+                <p className="text-center">Git</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={VSCode} alt="skill" className="skill-icon" />
+                <p className="text-center">Visual Studio</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={Heroku} alt="skill" className="skill-icon" />
+                <p className="text-center">Heroku</p>
+              </div>
+              <div className="skill flex flex-col items-center m-2">
+                <img src={Canva} alt="skill" className="skill-icon" />
+                <p className="text-center">Canva</p>
+              </div>
+            </div>
           </div>
         </article>
-        <article className="right-side flex justify-center">
-          <img src={logo} alt="logo" />
+        <article className="right-side flex flex-col justify-center items-center">
+          <img src={pfp} alt="pfp" className="pfp" />
+          <p className="about-description text-center">
+            I'm a graduate of the UNC Chapel Hill Coding BootCamp that teaches
+            students how to become a Fullstack Web Developer. I absolutely love
+            coding and I'm excited for all of the things I will create! I've
+            worked with some great web developers during my time in the BootCamp
+            and I'm eager to work with other developers outside of that!{' '}
+          </p>
+          <Link to="Contact">
+            <span className="about-description-span">
+              Let's make something awesome!
+            </span>
+          </Link>
         </article>
       </div>
     </section>
