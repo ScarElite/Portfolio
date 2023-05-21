@@ -82,13 +82,15 @@ function Nav() {
             activeLink === 'About' ? 'nav-active' : ''
           }`}
         >
+          <div className="nav-title">About</div>
           <Link
             to="About"
             smooth={true}
             duration={2000}
             className="mr-4"
+            id="nav-link"
             spy={true}
-            offset={0}
+            offset={50}
             onSetActive={handleSetActive}
             onClick={() => handleLinkClick('About')}
           >
@@ -100,11 +102,13 @@ function Nav() {
             activeLink === 'Projects' ? 'nav-active' : ''
           }`}
         >
+          <div className="nav-title">Projects</div>
           <Link
             to="Projects"
             smooth={true}
             duration={2000}
             className="mr-4"
+            id="nav-link"
             spy={true}
             offset={0}
             onSetActive={handleSetActive}
@@ -118,11 +122,13 @@ function Nav() {
             activeLink === 'OtherProjects' ? 'nav-active' : ''
           }`}
         >
+          <div className="nav-title">Other Projects</div>
           <Link
             to="OtherProjects"
             smooth={true}
             duration={2000}
             className="mr-4"
+            id="nav-link"
             spy={true}
             offset={0}
             onSetActive={handleSetActive}
@@ -136,11 +142,13 @@ function Nav() {
             activeLink === 'Contact' ? 'nav-active' : ''
           }`}
         >
+          <div className="nav-title">Contact</div>
           <Link
             to="Contact"
             smooth={true}
             duration={2000}
             className="mr-4"
+            id="nav-link"
             spy={true}
             offset={0}
             onSetActive={handleSetActive}

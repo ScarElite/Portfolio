@@ -86,6 +86,23 @@ code {
   text-shadow: 0 0 10px lightgrey;
 }
 
+.main-button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-button:hover {
+  background-color: rgba(144, 238, 144, 0.8);
+  border: none;
+  padding: 12px;
+  .right-arrow {
+ rotate: 90deg;
+}
+}
+
 nav {
   position: fixed;
   bottom: 40px;
@@ -96,22 +113,70 @@ nav {
 }
 
 .nav-links {
-  align-items: start;
+  align-items: end;
+  position: relative;
 }
 
 .nav-link {
   cursor: pointer;
   padding: 6px 0;
-  width: 100%;
   height: 60px;
   border-right: 1px solid transparent;
   transition: color 2s, opacity 2s;
   opacity: 0.5;
+  position: relative;
+  /* min-width: 60px; */
+  justify-content: end;
+}
+
+.nav-title {
+  visibility: hidden;
+  display: none;
 }
 
 .nav-link:hover {
   color: var(--secondary-color);
-  /* border-right-color: white; */
+  .nav-title {
+    visibility: visible;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    border-right: 2px solid var(--tertiary-color);
+    padding-right: 6px;
+    margin-right: 4px;
+    position: relative;
+    left: 20px;
+    top: 32%;
+    transform: translate(-100%, -50%);
+  }
+  #nav-link {
+    font-size: 20px;
+    position: absolute;
+  }
+}
+
+.nav-link:nth-child(2):hover {
+  .nav-title {
+    align-self: flex-start;
+    left: 35px;
+    top: 50%;
+  }
+}
+
+.nav-link:nth-child(3):hover {
+  .nav-title {
+    align-self: flex-start;
+    left: 92px;
+    top: 50%;
+  }
+}
+
+.nav-link:nth-child(4):hover {
+  .nav-title {
+    align-self: flex-start;
+    left: 35px;
+    top: 50%;
+  }
 }
 
 .nav-active {
@@ -136,19 +201,6 @@ nav {
   100% {
     height: 100%;
     transform-origin: top;
-    transform: scaleY(1);
-  }
-}
-
-@keyframes borderAnimationFromBottom {
-  0% {
-    height: 0;
-    transform-origin: bottom;
-    transform: scaleY(0);
-  }
-  100% {
-    height: 100%;
-    transform-origin: bottom;
     transform: scaleY(1);
   }
 }
@@ -180,6 +232,50 @@ nav {
 .about-header {
   font-size: 5rem;
   font-family: var(--primary-font);
+  margin-top: 200px;
+}
+
+.section-line {
+  background-color: white;
+  height: 4px;
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+.about-icon-list {
+  width: 80%;
+}
+
+.about-icon {
+  width: 20%;
+  height: fit-content;
+}
+
+.about-icon img {
+  width: 150px;
+  height: 150px;
+}
+
+.about-icon-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  position: relative;
+  top: -20px;
+  /* color: var(--tertiary-color); */
+}
+
+.about-icon-description {
+  /* width: 75%; */
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  position: relative;
+  top: -20px;
+}
+
+.about-info {
+  width: 75%;
 }
 
 .about-description {
