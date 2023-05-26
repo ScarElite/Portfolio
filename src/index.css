@@ -75,13 +75,13 @@ code {
 }
 
 .main-header {
-  font-size: 160px;
+  /* font-size: 160px; */
   color: white;
   text-shadow: 0 0 10px lightgrey;
 }
 
 .main-description {
-  font-size: 32px;
+  /* font-size: 32px; */
   color: white;
   text-shadow: 0 0 10px lightgrey;
 }
@@ -655,4 +655,46 @@ nav {
 
 .icon i {
   font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide the scrollbar but keep the scrolling functionality */
+  body {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Internet Explorer and Edge */
+    -webkit-overflow-scrolling: touch; /* For iOS */
+  }
+
+  /* For WebKit browsers (such as Chrome and Safari) */
+  body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  /* #Main video {
+    position: absolute;
+  } */
+
+  .main-header {
+    font-size: 72px;
+  }
+
+  .main-button {
+    margin-top: 60px;
+  }
+
+  nav {
+  position: fixed;
+  bottom: 40px;
+  right: 100px;
+}
 }

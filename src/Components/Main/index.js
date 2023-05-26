@@ -11,8 +11,10 @@ function Main() {
         <source src={Video3} type="video/mp4" />
       </video>
       <div className="flex flex-col main-div">
-        <h1 className="main-header">Hello, I'm Mitchell!</h1>
-        <h2 className="main-description">I'm a Full Stack Web Developer</h2>
+        <h1 className="main-header text-9xl mb-8">Hello, I'm Mitchell!</h1>
+        <h2 className="main-description text-4xl">
+          I'm a Full Stack Web Developer
+        </h2>
         <Link
           to="About"
           smooth={true}
