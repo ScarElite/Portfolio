@@ -12,7 +12,7 @@ import JavaScript from '../../assets/icons/javascript.svg';
 import jQuery from '../../assets/icons/jquery.svg';
 import ReactJS from '../../assets/icons/react.svg';
 import NodeJS from '../../assets/icons/node-js.svg';
-import ExpressJS from '../../assets/icons/express.svg';
+import Python from '../../assets/icons/python.svg';
 import MongoDB from '../../assets/icons/mongodb.svg';
 import GraphQL from '../../assets/icons/graphql.svg';
 import MySQL from '../../assets/icons/mysql.svg';
@@ -32,7 +32,7 @@ function About() {
         <header className="about-header text-center">About</header>
         <div className="section-line"></div>
       </div>
-      <div className="about-icon-list flex justify-between">
+      <div className="about-icon-list flex justify-between mt-10">
         <div className="about-icon flex flex-col text-center items-center">
           <img src={communication} alt="icon" className="img-icon" />
           <h1 className="about-icon-header">Communicative</h1>
@@ -62,100 +62,121 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center about-info">
-        <article className="left-side flex flex-col px-20">
-          <div className="flex flex-col justify-center">
-            <header className="skills-header text-center">Skills</header>
-            <div className="skills flex flex-wrap">
-              <div className="skill flex flex-col items-center m-2">
-                <img src={HTML} alt="skill" className="skill-icon" />
-                <p className="text-center">HTML</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={CSS} alt="skill" className="skill-icon" />
-                <p className="text-center">CSS</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={TailwindCSS} alt="skill" className="skill-icon" />
-                <p className="text-center">TailwindCSS</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={Bootstrap} alt="skill" className="skill-icon" />
-                <p className="text-center">Bootstrap</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={JavaScript} alt="skill" className="skill-icon" />
-                <p className="text-center">JavaScript</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={jQuery} alt="skill" className="skill-icon" />
-                <p className="text-center">jQuery</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={ReactJS} alt="skill" className="skill-icon" />
-                <p className="text-center">React</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={NodeJS} alt="skill" className="skill-icon" />
-                <p className="text-center">NodeJS</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={ExpressJS} alt="skill" className="skill-icon" />
-                <p className="text-center">ExpressJS</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={MongoDB} alt="skill" className="skill-icon" />
-                <p className="text-center">MongoDB</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={GraphQL} alt="skill" className="skill-icon" />
-                <p className="text-center">GraphQL</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={MySQL} alt="skill" className="skill-icon" />
-                <p className="text-center">MySQL</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={NoSQL} alt="skill" className="skill-icon" />
-                <p className="text-center">NoSQL</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={HandlebarsJS} alt="skill" className="skill-icon" />
-                <p className="text-center">HandlebarsJS</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={Git} alt="skill" className="skill-icon" />
-                <p className="text-center">Git</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={VSCode} alt="skill" className="skill-icon" />
-                <p className="text-center">Visual Studio</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={Heroku} alt="skill" className="skill-icon" />
-                <p className="text-center">Heroku</p>
-              </div>
-              <div className="skill flex flex-col items-center m-2">
-                <img src={Canva} alt="skill" className="skill-icon" />
-                <p className="text-center">Canva</p>
+      <div className="flex flex-col items-center about-info mt-10">
+        <article className="top-side flex flex-col px-20">
+          <div className="">
+            <header className="skills-header text-center">
+              Skills & Experience
+            </header>
+            <div className="skills-description-container text-center flex flex-col items-center">
+              <h1 className="skills-description-header">
+                I am a Fullstack Web Developer and am comfortable doing either
+                front end or back end.
+              </h1>
+              <p className="skills-description mt-4">
+                I use many different languages and tools to help me create
+                websites that people will like. I'm constantly improving and
+                learning different skills to expand my knowledge and expertise.
+                I'm looking to continue my growth and continue to add more
+                projects to my portfolio to showcase what I can do. I am a good
+                problem solver and am always up for a challenge.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="skills flex flex-wrap justify-center items-center mt-8">
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={HTML} alt="skill" className="skill-icon" />
+                  <p className="text-center">HTML</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={CSS} alt="skill" className="skill-icon" />
+                  <p className="text-center">CSS</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={TailwindCSS} alt="skill" className="skill-icon" />
+                  <p className="text-center">TailwindCSS</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={Bootstrap} alt="skill" className="skill-icon" />
+                  <p className="text-center">Bootstrap</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={JavaScript} alt="skill" className="skill-icon" />
+                  <p className="text-center">JavaScript</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={jQuery} alt="skill" className="skill-icon" />
+                  <p className="text-center">jQuery</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={ReactJS} alt="skill" className="skill-icon" />
+                  <p className="text-center">React</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={NodeJS} alt="skill" className="skill-icon" />
+                  <p className="text-center">NodeJS</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={Python} alt="skill" className="skill-icon" />
+                  <p className="text-center">Python</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={MongoDB} alt="skill" className="skill-icon" />
+                  <p className="text-center">MongoDB</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={GraphQL} alt="skill" className="skill-icon" />
+                  <p className="text-center">GraphQL</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={MySQL} alt="skill" className="skill-icon" />
+                  <p className="text-center">MySQL</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={NoSQL} alt="skill" className="skill-icon" />
+                  <p className="text-center">NoSQL</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={HandlebarsJS} alt="skill" className="skill-icon" />
+                  <p className="text-center">HandlebarsJS</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={Git} alt="skill" className="skill-icon" />
+                  <p className="text-center">Git</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={VSCode} alt="skill" className="skill-icon" />
+                  <p className="text-center">Visual Studio</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={Heroku} alt="skill" className="skill-icon" />
+                  <p className="text-center">Heroku</p>
+                </div>
+                <div className="skill flex flex-col items-center m-2">
+                  <img src={Canva} alt="skill" className="skill-icon" />
+                  <p className="text-center">Canva</p>
+                </div>
               </div>
             </div>
           </div>
         </article>
-        <article className="right-side flex flex-col justify-center items-center">
+        <article className="bottom-side flex justify-around items-center mt-20">
           <img src={pfp} alt="pfp" className="pfp" />
-          <p className="about-description text-center">
-            I'm a graduate of the UNC Chapel Hill Coding BootCamp that teaches
-            students how to become a Fullstack Web Developer. I absolutely love
-            coding and I'm excited for all of the things I will create! I've
-            worked with some great web developers during my time in the BootCamp
-            and I'm eager to work with other developers outside of that!{' '}
-          </p>
-          <Link to="Contact">
-            <span className="about-description-span">
-              Let's make something awesome!
-            </span>
-          </Link>
+          <div className="flex flex-col items-center">
+            <p className="about-description text-center">
+              I'm a graduate of the UNC Chapel Hill Coding BootCamp that teaches
+              students how to become a Fullstack Web Developer. I absolutely
+              love coding and I'm excited for all of the things I will create!
+              I've worked with some great web developers during my time in the
+              BootCamp and I'm eager to work with other developers outside of
+              that!{' '}
+            </p>
+            <Link to="Contact">
+              <span className="about-description-span">
+                Let's make something awesome!
+              </span>
+            </Link>
+          </div>
         </article>
       </div>
     </section>
