@@ -35,24 +35,26 @@ function Projects() {
       >
         <div className="project">
           <div className="project-overview flex flex-col justify-center mt-10">
-            <header className="project-type">REAL ESTATE APPLICATION</header>
-            <h1 className="project-title mb-4">Noble Oak Solutions</h1>
-            <p className="project-description mb-8">
+            <header className="project-type text-lg">
+              REAL ESTATE APPLICATION
+            </header>
+            <h1 className="project-title text-6xl mb-4">Noble Oak Solutions</h1>
+            <p className="project-description text-lg mb-8">
               Noble Oak Solutions is a brand new real estate company looking to
               help those in NC.
             </p>
-            <p className="project-team mb-6">
+            <p className="project-team text-xl mb-6">
               Worked With:{' '}
               <a
                 href="https://github.com/DavidDowell"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/DavidDowell">David Dowell</span>
               </a>
             </p>
             <div className="project-tech-section flex flex-col">
-              <h2 className="project-tech mb-2">Built With:</h2>
+              <h2 className="project-tech text-xl mb-2">Built With:</h2>
               <ul className="project-tech-list flex mb-8">
                 <div className="mx-1">
                   <img
@@ -96,9 +98,9 @@ function Projects() {
                 </div>
               </ul>
               <div className="flex">
-                <h2 className="project-links mr-2">Links:</h2>
+                <h2 className="project-links text-2xl mr-2">Links:</h2>
                 <ul className="flex">
-                  <div className="mx-2 link-icon" title="GitHub Repo">
+                  <div className="text-2xl mx-2 link-icon" title="GitHub Repo">
                     <a
                       href="https://github.com/DavidDowell/noble-oak-solutions"
                       target="blank"
@@ -106,7 +108,7 @@ function Projects() {
                       <i class="fa-brands fa-github"></i>
                     </a>
                   </div>
-                  <div className="mx-2 link-icon" title="Website">
+                  <div className="text-2xl mx-2 link-icon" title="Website">
                     <a href="https://noble-oak.com/" target="blank">
                       <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
@@ -124,25 +126,25 @@ function Projects() {
 
         <div className="project">
           <div className="project-overview flex flex-col justify-center mt-10">
-            <header className="project-type">SOCIAL APPLICATION</header>
-            <h1 className="project-title mb-4">Our Place</h1>
-            <p className="project-description mb-8">
+            <header className="project-type text-lg">SOCIAL APPLICATION</header>
+            <h1 className="project-title text-6xl mb-4">Our Place</h1>
+            <p className="project-description text-lg mb-8">
               OurPlace was developed to be a roommate finder for people that can
               not cover rent and need a way to vet potential roommates.
             </p>
-            <p className="project-team">Worked With: </p>
+            <p className="project-team text-xl">Worked With: </p>
             <div className="mb-6 flex">
               <a
                 href="https://github.com/DavidDowell"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-lg mx-4"
               >
                 <span title="https://github.com/DavidDowell">David Dowell</span>
               </a>
               <a
                 href="https://github.com/pmacdonald07"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-lg mx-4"
               >
                 <span title="https://github.com/pmacdonald07">
                   Patrick MacDonald
@@ -151,14 +153,14 @@ function Projects() {
               <a
                 href="https://github.com/awchen85"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-lg mx-4"
               >
                 <span title="https://github.com/awchen85">Alex Chen</span>
               </a>
               <a
                 href="https://github.com/hartsfieldt"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-lg mx-4"
               >
                 <span title="https://github.com/hartsfieldt">
                   Teresa Hartsfield
@@ -166,7 +168,7 @@ function Projects() {
               </a>
             </div>
             <div className="project-tech-section flex flex-col">
-              <h2 className="project-tech mb-2">Built With:</h2>
+              <h2 className="project-tech text-xl mb-2">Built With:</h2>
               <ul className="project-tech-list flex mb-8">
                 <div className="mx-1">
                   <img
@@ -234,9 +236,9 @@ function Projects() {
                 </div>
               </ul>
               <div className="flex">
-                <h2 className="project-links mr-2">Links:</h2>
+                <h2 className="project-links text-2xl mr-2">Links:</h2>
                 <ul className="flex">
-                  <div className="mx-2 link-icon" title="GitHub Repo">
+                  <div className="text-2xl mx-2 link-icon" title="GitHub Repo">
                     <a
                       href="https://github.com/awchen85/project-3"
                       target="blank"
@@ -244,7 +246,7 @@ function Projects() {
                       <i class="fa-brands fa-github"></i>
                     </a>
                   </div>
-                  <div className="mx-2 link-icon" title="Website">
+                  <div className="text-2xl mx-2 link-icon" title="Website">
                     <a
                       href="https://p3-our-place.herokuapp.com/"
                       target="blank"
@@ -265,21 +267,21 @@ function Projects() {
 
         <div className="project">
           <div className="project-overview flex flex-col justify-center mt-10">
-            <header className="project-type">SOCIAL APPLICATION</header>
-            <h1 className="project-title mb-4">Alternative Endings</h1>
-            <p className="project-description mb-8">
+            <header className="project-type text-lg">SOCIAL APPLICATION</header>
+            <h1 className="project-title text-6xl mb-4">Alternative Endings</h1>
+            <p className="project-description text-lg mb-8">
               Alternative Endings is a platform for movie buffs to blog their
               alternative ending to a movie. Other users can interact with these
               posts. The application also has info about upcoming movies and
               those already in theaters. Get detailed info about any movie by
               using the search feature.
             </p>
-            <p className="project-team">Worked With: </p>
+            <p className="project-team text-lg">Worked With: </p>
             <div className="mb-6 flex">
               <a
                 href="https://github.com/hartsfieldt"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/hartsfieldt">
                   Teresa Hartsfield
@@ -288,14 +290,14 @@ function Projects() {
               <a
                 href="https://github.com/taholton748"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/taholton748">Tyler Holton</span>
               </a>
               <a
                 href="https://github.com/ashleymullikin"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/ashleymullikin">
                   Ashley Mullikin
@@ -303,7 +305,7 @@ function Projects() {
               </a>
             </div>
             <div className="project-tech-section flex flex-col">
-              <h2 className="project-tech mb-2">Built With:</h2>
+              <h2 className="project-tech text-xl mb-2">Built With:</h2>
               <ul className="project-tech-list flex mb-8">
                 <div className="mx-1">
                   <img
@@ -379,9 +381,9 @@ function Projects() {
                 </div>
               </ul>
               <div className="flex">
-                <h2 className="project-links mr-2">Links:</h2>
+                <h2 className="project-links text-2xl mr-2">Links:</h2>
                 <ul className="flex">
-                  <div className="mx-2 link-icon" title="GitHub Repo">
+                  <div className="text-2xl mx-2 link-icon" title="GitHub Repo">
                     <a
                       href="https://github.com/ScarElite/Alternative-Endings"
                       target="blank"
@@ -389,7 +391,7 @@ function Projects() {
                       <i class="fa-brands fa-github"></i>
                     </a>
                   </div>
-                  <div className="mx-2 link-icon" title="Website">
+                  <div className="text-2xl mx-2 link-icon" title="Website">
                     <a
                       href="https://alternative-endings.herokuapp.com/"
                       target="blank"
@@ -414,28 +416,28 @@ function Projects() {
 
         <div className="project">
           <div className="project-overview flex flex-col justify-center mt-10">
-            <header className="project-type">RECIPE APPLICATION</header>
-            <h1 className="project-title mb-4">Meal Maker</h1>
-            <p className="project-description mb-8">
+            <header className="project-type text-lg">RECIPE APPLICATION</header>
+            <h1 className="project-title text-6xl mb-4">Meal Maker</h1>
+            <p className="project-description text-lg mb-8">
               Alternative Endings is a platform for movie buffs to blog their
               alternative ending to a movie. Other users can interact with these
               posts. The application also has info about upcoming movies and
               those already in theaters. Get detailed info about any movie by
               using the search feature.
             </p>
-            <p className="project-team">Worked With: </p>
+            <p className="project-team text-xl">Worked With: </p>
             <div className="mb-6 flex">
               <a
                 href="https://github.com/DavidDowell"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/DavidDowell">David Dowell</span>
               </a>
               <a
                 href="https://github.com/pmacdonald07"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/pmacdonald07">
                   Patrick MacDonald
@@ -444,13 +446,13 @@ function Projects() {
               <a
                 href="https://github.com/awchen85"
                 target="blank"
-                className="project-team-member mx-4"
+                className="project-team-member text-xl mx-4"
               >
                 <span title="https://github.com/awchen85">Alex Chen</span>
               </a>
             </div>
             <div className="project-tech-section flex flex-col">
-              <h2 className="project-tech mb-2">Built With:</h2>
+              <h2 className="project-tech text-xl mb-2">Built With:</h2>
               <ul className="project-tech-list flex mb-8">
                 <div className="mx-1">
                   <img
@@ -486,9 +488,9 @@ function Projects() {
                 </div>
               </ul>
               <div className="flex">
-                <h2 className="project-links mr-2">Links:</h2>
+                <h2 className="project-links text-2xl mr-2">Links:</h2>
                 <ul className="flex">
-                  <div className="mx-2 link-icon" title="GitHub Repo">
+                  <div className="text-2xl mx-2 link-icon" title="GitHub Repo">
                     <a
                       href="https://github.com/ScarElite/Meal-Maker"
                       target="blank"
@@ -496,7 +498,7 @@ function Projects() {
                       <i class="fa-brands fa-github"></i>
                     </a>
                   </div>
-                  <div className="mx-2 link-icon" title="Website">
+                  <div className="text-2xl mx-2 link-icon" title="Website">
                     <a
                       href="https://pmacdonald07.github.io/Meal-Maker/"
                       target="blank"

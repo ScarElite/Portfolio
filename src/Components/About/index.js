@@ -65,15 +65,15 @@ function About() {
       <div className="flex flex-col items-center about-info mt-10">
         <article className="top-side flex flex-col px-20">
           <div className="">
-            <header className="skills-header text-center">
+            <header className="skills-header text-center text-6xl mb-3">
               Skills & Experience
             </header>
             <div className="skills-description-container text-center flex flex-col items-center">
-              <h1 className="skills-description-header">
+              <h1 className="skills-description-header text-xl">
                 I am a Fullstack Web Developer and am comfortable doing either
                 front end or back end.
               </h1>
-              <p className="skills-description mt-4">
+              <p className="skills-description text-md mt-4">
                 I use many different languages and tools to help me create
                 websites that people will like. I'm constantly improving and
                 learning different skills to expand my knowledge and expertise.
@@ -163,7 +163,7 @@ function About() {
         <article className="bottom-side flex justify-around items-center mt-20">
           <img src={pfp} alt="pfp" className="pfp" />
           <div className="flex flex-col items-center">
-            <p className="about-description text-center">
+            <p className="about-description text-center text-2xl">
               I'm a graduate of the UNC Chapel Hill Coding BootCamp that teaches
               students how to become a Fullstack Web Developer. I absolutely
               love coding and I'm excited for all of the things I will create!
@@ -172,7 +172,7 @@ function About() {
               that!{' '}
             </p>
             <Link to="Contact">
-              <span className="about-description-span">
+              <span className="about-description-span text-2xl">
                 Let's make something awesome!
               </span>
             </Link>
