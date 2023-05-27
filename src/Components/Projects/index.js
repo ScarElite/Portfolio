@@ -43,6 +43,11 @@ function Projects() {
               Noble Oak Solutions is a brand new real estate company looking to
               help those in NC.
             </p>
+            <div className="project-preview-responsive">
+              <a href="https://noble-oak.com/" target="blank">
+                <img src={NobleOak} alt="project" className="project-img" />
+              </a>
+            </div>
             <p className="project-team text-xl mb-6">
               Worked With:{' '}
               <a
@@ -132,6 +137,11 @@ function Projects() {
               OurPlace was developed to be a roommate finder for people that can
               not cover rent and need a way to vet potential roommates.
             </p>
+            <div className="project-preview-responsive">
+              <a href="https://p3-our-place.herokuapp.com/" target="blank">
+                <img src={OurPlace} alt="project" className="project-img" />
+              </a>
+            </div>
             <p className="project-team text-xl">Worked With: </p>
             <div className="mb-6 flex">
               <a
@@ -276,6 +286,18 @@ function Projects() {
               those already in theaters. Get detailed info about any movie by
               using the search feature.
             </p>
+            <div className="project-preview-responsive">
+              <a
+                href="https://alternative-endings.herokuapp.com/"
+                target="blank"
+              >
+                <img
+                  src={AlternativeEndings}
+                  alt="project"
+                  className="project-img"
+                />
+              </a>
+            </div>
             <p className="project-team text-lg">Worked With: </p>
             <div className="mb-6 flex">
               <a
@@ -425,6 +447,14 @@ function Projects() {
               those already in theaters. Get detailed info about any movie by
               using the search feature.
             </p>
+            <div className="project-preview-responsive">
+              <a
+                href="https://pmacdonald07.github.io/Meal-Maker/"
+                target="blank"
+              >
+                <img src={MealMaker} alt="project" className="project-img" />
+              </a>
+            </div>
             <p className="project-team text-xl">Worked With: </p>
             <div className="mb-6 flex">
               <a

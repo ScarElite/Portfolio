@@ -376,6 +376,11 @@ nav {
   font-family: var(--primary-font);
 }
 
+.project-preview-responsive {
+  display: none;
+  visibility: hidden;
+}
+
 .project-team-member {
   font-family: var(--secondary-font);
   border: 1px solid var(--secondary-color);
@@ -719,6 +724,47 @@ nav {
 .about-description-span {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.project {
+  height: 100%;
+}
+
+.project-overview {
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+}
+
+.project-title {
+  font-size: 48px;
+}
+
+.project-description {
+  width: 90%;
+}
+
+.project-preview-responsive {
+  display: flex;
+  visibility: visible;
+}
+
+.project-img {
+  width: 100%;
+  height: 400px;
+}
+.project-tech-section {
+  width: 100%;
+}
+
+.project-tech-item {
+  width: 50px;
+  height: 50px;
+}
+
+.project-preview {
+  display: none;
+  visibility: hidden;
 }
 
 .other-project {
