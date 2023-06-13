@@ -6,7 +6,7 @@ function OtherProjects() {
       <header className="text-center other-projects-header">
         OTHER PROJECTS
       </header>
-      <ul className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 mt-12">
+      <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
         <a href="https://hidden-bastion-66681.herokuapp.com/" target="blank">
           <li className="other-project flex flex-col">
             <div className="flex justify-between mb-4 other-project-top">
