@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import Grapevine from "../../assets/images/grapevine.svg"
 import NobleOak from '../../assets/images/NOS.svg';
 import OurPlace from '../../assets/images/OurPlace.svg';
 import AlternativeEndings from '../../assets/images/AE.svg';
@@ -33,6 +34,93 @@ function Projects() {
         slidesToShow={1}
         slidesToScroll={1}
       >
+        <div className="project">
+          <div className="project-overview flex flex-col justify-center mt-10">
+            <header className="project-type text-lg">
+              SENIOR PLACEMENT APPLICATION
+            </header>
+            <h1 className="project-title text-6xl mb-4">The Grapevine Senior Placement Services</h1>
+            <p className="project-description text-lg mb-8">
+              Personalized Senior Care Solutions: Matching Families with the Ideal Community for Their Loved Ones.
+            </p>
+            <div className="project-preview-responsive">
+              <a href="https://www.thegrapevineseniorplacement.com/" target="blank">
+                <img src={Grapevine} alt="project" className="project-img" />
+              </a>
+            </div>
+            <p className="project-team text-xl mb-6">
+              Worked With:{' '}
+              <a
+                href="https://github.com/DavidDowell"
+                target="blank"
+                className="project-team-member text-xl mx-4"
+              >
+                <span title="https://github.com/DavidDowell">David Dowell</span>
+              </a>
+            </p>
+            <div className="project-tech-section flex flex-col">
+              <h2 className="project-tech text-xl mb-2">Built With:</h2>
+              <ul className="project-tech-list flex mb-8">
+                <div className="mx-1">
+                  <img
+                    src={HTML}
+                    alt="HTML Icon"
+                    title="HTML"
+                    className="project-tech-item"
+                  />
+                </div>
+                <div className="mx-1">
+                  <img
+                    src={CSS}
+                    alt="CSS Icon"
+                    title="CSS"
+                    className="project-tech-item"
+                  />
+                </div>
+                <div className="mx-1">
+                  <img
+                    src={JavaScript}
+                    alt="JavaScript Icon"
+                    title="JavaScript"
+                    className="project-tech-item"
+                  />
+                </div>
+                <div className="mx-1">
+                  <img
+                    src={react}
+                    alt="React Icon"
+                    title="React"
+                    className="project-tech-item"
+                  />
+                </div>
+                <div className="mx-1">
+                  <img
+                    src={tailwindcss}
+                    alt="TailwindCSS Icon"
+                    title="TailwindCSS"
+                    className="project-tech-item"
+                  />
+                </div>
+              </ul>
+              <div className="flex">
+                <h2 className="project-links text-2xl mr-2">Links:</h2>
+                <ul className="flex">
+                  <div className="text-2xl mx-2 link-icon" title="Website">
+                    <a href="https://www.thegrapevineseniorplacement.com/" target="blank">
+                      <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project-preview flex content-center">
+            <a href="https://www.thegrapevineseniorplacement.com/" target="blank">
+              <img src={Grapevine} alt="project" className="project-img" />
+            </a>
+          </div>
+        </div>
+
         <div className="project">
           <div className="project-overview flex flex-col justify-center mt-10">
             <header className="project-type text-lg">
